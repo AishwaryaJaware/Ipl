@@ -14,8 +14,31 @@ private float nRR;
 
 private boolean isQualified;
 
+private String shortName;
+
 
 //setter-getter
+
+public String getshortName() {
+	return shortName;
+}
+
+	
+@Override
+public String toString() {
+	return "Team [id=" + id + ", teamName=" + teamName + ", captainName=" + captainName + ", coachName=" + coachName
+			+ ", nRR=" + nRR + ", isQualified=" + isQualified + ", shortName=" + shortName + ", getshortName()="
+			+ getshortName() + ", getId()=" + getId() + ", getTeamName()=" + getTeamName() + ", getCaptainName()="
+			+ getCaptainName() + ", getCoachName()=" + getCoachName() + ", getnRR()=" + getnRR() + ", isQualified()="
+			+ isQualified() + ", getClass()=" + getClass() + ", hashCode()=" + hashCode() + ", toString()="
+			+ super.toString() + "]";
+}
+
+
+public void setshortName(String shortName)	{
+	this.shortName = shortName;
+}
+
 public int getId() {
 	return id;
 }
@@ -23,11 +46,11 @@ public int getId() {
 public void setId(int id) {
 	this.id = id;
 }
-public String TeamName() {
+public String getTeamName() {
 	return teamName;
 }
 
-public void setTeamName(String captainName) {
+public void setTeamName(String teamName) {
 	this.teamName = teamName;
 }
 
